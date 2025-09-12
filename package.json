@@ -1,0 +1,27 @@
+{
+  "name": "impacta-pao-na-porta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victorsfz/impacta-pao-na-porta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victorsfz/impacta-pao-na-porta/issues"
+  },
+  "homepage": "https://github.com/Victorsfz/impacta-pao-na-porta#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jwt-decode": "^4.0.0",
+    "nodemon": "^3.1.10"
+  }
+}
