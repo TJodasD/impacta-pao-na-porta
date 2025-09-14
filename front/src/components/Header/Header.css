@@ -1,0 +1,63 @@
+.header {
+    height: 5rem;
+    background-image: url('../../assets/headerBackground.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: white;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.headerLeftContent {
+    display: flex;
+    align-items: center;
+}
+
+.logoDiv {
+    display: flex;
+    align-items: start;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.logo {
+    height: 4rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.headerNavDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.3rem;
+}
+
+.headerNavButtons {
+    cursor: pointer;
+    user-select: none;
+}
+
+.headerNavButtons:hover {
+    text-decoration: underline;
+}
+
+.headerRightContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.signUpDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.3rem;
+}
