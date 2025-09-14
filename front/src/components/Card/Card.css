@@ -1,0 +1,35 @@
+.card {
+    background-image: url('../../assets/cardBackground.png');
+    min-height: 5rem;
+    height: 20rem;
+    border-radius: 5px;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    height: 10rem;
+    object-fit: contain;
+}
+
+.textContainer {
+    display: flex;
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+    max-width: 2rem
+}
+
+.cardText {
+    color: white
+}
+
+.cardImage {
+    width: 60%;
+    justify-self: center;
+    object-fit: contain;
+    object-position: center;
+}

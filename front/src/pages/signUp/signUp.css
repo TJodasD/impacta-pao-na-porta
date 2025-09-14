@@ -1,0 +1,92 @@
+.signUpContainer {
+    /* height: 70rem; */
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.signUpBody {
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+}
+
+.signUpCard {
+    margin-top: 5rem;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    height: 50rem
+}
+
+.signUpCard h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.signUpForm label {
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.signUpForm input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.signUpForm button {
+    padding: 0.9rem;
+    background-color: #a22828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.signUpForm button:hover {
+    background-color: #891e1e;
+}
+
+.login-link {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #a22828;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wrongPasswordText {
+    color: red;
+    margin-top: 0rem
+}
+
+.successScreen {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem
+}
+
+.successScreen h2 {
+    text-align: center;
+    color: #a22828;
+}

@@ -1,0 +1,70 @@
+.footer {
+    height: 10rem;
+    background-image: url('../../assets/headerBackground.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: white;
+    justify-content: space-between;
+    /* user-select: none; */
+    padding: 1rem
+}
+
+.footerLeftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 2rem;
+}
+
+.headerNavDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.3rem;
+}
+
+
+.footerRightContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    flex-direction: row;
+    gap: 2rem;
+    padding-right: 4rem;
+
+}
+
+.signUpDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.3rem;
+}
+
+.infoTitle {
+    color: #E9BD8D;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0
+}
+
+.infoText {
+    margin: 0.2rem
+}
+
+.socialIcons {
+    width: 2.5rem;
+    cursor: pointer
+}
+
+.socialIconsContainer {
+    display: flex;
+    gap: 1rem
+}
