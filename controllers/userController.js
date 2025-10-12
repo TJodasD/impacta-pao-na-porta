@@ -1,7 +1,7 @@
 const { createClient } = require('@supabase/supabase-js')
 
 
-const userController = async (req, res) => {
+const createNewUser = async (req, res) => {
   let { firstName, surname, address, addressNumber, zipCode, username, password, additionalInfo } = req.body.newUser
   console.log(req.body)
   console.log(username)
@@ -41,8 +41,28 @@ const userController = async (req, res) => {
   } catch (err) {
     console.log(err)
   }
-
 }
 
+const getUserInfo = async (req, res) => {
+  let { username } = req.body
+  const supabaseUrl = 'https://jakxpiuwyghcgbhtzdku.supabase.co'
+  const supabaseKey = process.env.SUPABASE_KEY
+  const supabase = await createClient(supabaseUrl, supabaseKey)
+  try {
+    console.log("Procurando usuarios existentes")
+    const { data, error } = await supabase
+      .from('users')
+      .select()
+      .eq('username', username)
+    console.log("Usuário encontrado:")
+    console.log(data)
+    if (data.length == 0) {
+      res.send("Usuário não encontrado")
+    }
+    res.send(data[0])
+  } catch (err) {
+    console.log(err)
+  }
+}
 
-module.exports = userController
+module.exports = { createNewUser, getUserInfo }
