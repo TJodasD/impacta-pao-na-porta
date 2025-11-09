@@ -1,0 +1,140 @@
+.ordersContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff9f3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ordersBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.ordersBody h2 {
+    color: #b45f06;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.ordersList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.orderItem {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.orderItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(180, 95, 6, 0.2);
+}
+
+.orderItem strong {
+    color: #b45f06;
+}
+
+.orderItem span {
+    color: #5a3a1e;
+    font-weight: 500;
+}
+
+.orderDetails {
+    margin-top: 0.7rem;
+    padding-left: 1rem;
+    border-left: 3px solid #f3c27b;
+}
+
+.orderDetails li {
+    margin: 4px 0;
+    color: #4a3320;
+    font-size: 0.95rem;
+}
+
+.orderDetails li strong {
+    color: #b45f06;
+}
+
+.noOrdersText {
+    margin-top: 1rem;
+    color: #8c6d46;
+    font-size: 1.1rem;
+}
+
+.feedbackMessage {
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    max-width: 600px;
+}
+
+.feedbackMessage.success {
+    background-color: #e8f8ec;
+    color: #27632a;
+    border: 1px solid #7ed38b;
+}
+
+.feedbackMessage.error {
+    background-color: #fcebea;
+    color: #8a1f1f;
+    border: 1px solid #f5b1b0;
+}
+
+.cancelConfirmBox {
+    background-color: #fff6f6;
+    border: 1px solid #f1b5b5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.cancelBtnsRow {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.confirmBtn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confirmBtn:hover {
+    background-color: #a7281d;
+}
+
+.cancelBtnOutline {
+    background-color: transparent;
+    border: 2px solid #c0392b;
+    color: #c0392b;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancelBtnOutline:hover {
+    background-color: #fff1f1;
+}
