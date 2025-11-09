@@ -18,7 +18,7 @@ export default function Header() {
         </div>
         <div className="headerNavDiv">
           <p className="headerNavButtons" onClick={() => navToPage('/')}>Início</p>
-          <p className="headerNavButtons">Pedidos</p>
+          <p className="headerNavButtons" onClick={() => navToPage('/login')}>Pedidos</p>
           <p className="headerNavButtons">Sobre</p>
         </div>
       </div>
@@ -26,7 +26,7 @@ export default function Header() {
 
         <div className="signUpDiv">
           <p className="headerNavButtons" onClick={() => navToPage('/cadastro')}>Cadastre-se</p>
-          <p className="headerNavButtons">Entrar</p>
+          <p className="headerNavButtons" onClick={() => navToPage('/login')}>Entrar </p>
         </div>
       </div>
 
