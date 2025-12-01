@@ -106,10 +106,10 @@
 
 .cancelBtnsRow {
     display: flex;
+    gap: 0.7rem;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
 }
+
 
 .confirmBtn {
     background-color: #c0392b;
@@ -137,4 +137,152 @@
 
 .cancelBtnOutline:hover {
     background-color: #fff1f1;
+}
+
+.extraButtons {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.rateBtn,
+.problemBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+}
+
+.rateBtn {
+    background-color: #f3c27b;
+    color: #5a3a1e;
+}
+
+.rateBtn:hover {
+    background-color: #eab565;
+}
+
+.problemBtn {
+    background-color: #ffe5d0;
+    color: #b45f06;
+    border: 1px solid #f3c27b;
+}
+
+.problemBtn:hover {
+    background-color: #ffdab8;
+}
+
+.modalBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modalBox {
+    background-color: white;
+    width: 90%;
+    max-width: 420px;
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    animation: modalFade 0.2s ease;
+}
+
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modalBox h3 {
+    color: #b45f06;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.modalBox select,
+.modalBox textarea {
+    width: 100%;
+    margin: 0.4rem 0 1rem 0;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #d9c7b8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    resize: none;
+}
+
+.modalBox textarea {
+    height: 90px;
+}
+
+.modalBox button {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.orderActions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.extraButtonsRow {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.cancelBtn {
+    background-color: #ffdddd;
+    color: #a12a2a;
+    border: 1px solid #e6b3b3;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cancelBtn:hover {
+    background-color: #f8c8c8;
+}
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 20px;
+    background: #333;
+    color: white;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 15px;
+    z-index: 9999;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+.mensagem-problema {
+    background: #e67e22;
 }
