@@ -134,5 +134,41 @@ const getProducts = async (req, res) => {
     }
 }
 
-module.exports = { createNewOrder, getProducts, getOrdersByUserId, cancelOrder }
+const rateOrder = async (req, res) => {
+    const { orderId, rating, comment } = req.body;
+
+    const supabaseUrl = "https://jakxpiuwyghcgbhtzdku.supabase.co";
+    const supabaseKey = process.env.SUPABASE_KEY;
+    const supabase = await createClient(supabaseUrl, supabaseKey);
+
+    try {
+        console.log(`Salvando avaliação do pedido ID: ${orderId}`);
+
+        const { data, error } = await supabase
+            .from("orders")
+            .update({
+                star_rating: rating,
+                feedback: comment
+            })
+            .eq("id", orderId)
+            .select("id, star_rating, feedback")
+            .single();
+
+        if (error) throw error;
+
+        res.status(200).send({
+            message: "Avaliação registrada com sucesso!",
+            order: data
+        });
+
+    } catch (err) {
+        console.error("Erro ao salvar avaliação:", err);
+        res
+            .status(400)
+            .send({ message: "Erro ao salvar avaliação", error: err });
+    }
+};
+
+
+module.exports = { createNewOrder, getProducts, getOrdersByUserId, cancelOrder, rateOrder }
 
